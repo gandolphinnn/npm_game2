@@ -1,0 +1,28 @@
+{
+	"name": "@gandolphinnn/game2",
+	"version": "1.0.3",
+	"description": "High-level API for canvas scripting",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"live": "concurrently \"tsc --watch\" \"parcel index.html\"",
+		"clean": "rmdir \".parcel-cache\" && del /Q /f \"dist\" && tsc && del /Q /f \"dist\\test*\"",
+		"publish": "npm run clean && npm publish"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/gandolphinnn/npm_game2.git"
+	},
+	"author": "Gandolphinnn",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/gandolphinnn/npm_game2/issues"
+	},
+	"homepage": "https://github.com/gandolphinnn/npm_game2#readme",
+	"dependencies": {
+		"@gandolphinnn/utils": "^2.0.0"
+	}
+}
